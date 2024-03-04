@@ -1,0 +1,178 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+   align-self: flex-start;
+
+  }
+  
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+  
+  .card {
+    padding: 2em;
+  }
+  
+  .read-the-docs {
+    color: #888;
+  }
+input{
+width: 350px;
+margin-left:   10px;
+
+
+
+
+}
+
+
+
+.headcontents{
+
+margin-top: 50px;
+
+display: flex;
+flex-direction: column;
+
+
+}
+
+
+
+
+.headcontentsmain{
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+.secondcontents{
+
+justify-content: space-between;
+
+
+  display: flex;
+  align-items: center;
+
+}
+.card{
+padding: 0;
+margin-top: 40px;
+display: flex;
+flex-direction: column;
+align-items: start;
+justify-content: flex-start;
+    background-color: lightgreen;
+    height: 180px;
+    width: 250px;
+    margin: 30px;
+    text-align: start;
+ 
+}
+
+.cardcontents{
+  
+display: flex;
+flex-direction: row;
+}
+
+
+.col-lg-4, .col-sm-6{
+
+
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.contents{
+
+
+}
+
+#button{
+font-size: x-small;
+background-color: green;
+    margin-left: 20px;
+}
+
+
+
+.todocard{
+
+
+  margin-top: 40px;
+    padding: 50px;
+}
+.maincontents{
+
+
+ padding-top: 40px;
+}
+
+*{
+
+
+    color: green;
+}
+select{
+
+
+
+    color: black;
+}
+
+.editdelbuttons{
+
+width: 100%;
+display: flex;
+
+margin-top: 20px;
+justify-content: end;
+
+
+}
+#editbutton{
+
+margin: 10px;
+background-color: green;
+
+}
+
+#deletebutton{
+
+  margin: 10px;
+  background-color: orange;
+  
+  }
