@@ -79,8 +79,9 @@ console.log(`${newstatus}`);
       return task;
     }
   });
-  settodotaskdetails(updatedTaskstatus);
   settodotaskdetailsforfilter(updatedTaskstatus);
+  settodotaskdetails(updatedTaskstatus);
+  
 
 
 
@@ -117,6 +118,7 @@ function handleedit(tasktitlee, taskdescc, edittaskid) {
   });
 
   settodotaskdetailsforfilter(updatedTaskDetails);
+  settodotaskdetails(updatedTaskDetails);
 
 
   console.log(todotaskdetails);
@@ -146,6 +148,7 @@ return {
 
       })
       settodotaskdetailsforfilter(newtodotaskdetails);
+      settodotaskdetails(newtodotaskdetails);
        console.log("DE;;");
         
         
