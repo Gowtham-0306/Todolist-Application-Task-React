@@ -10,7 +10,7 @@ export default function Cardcontainer(){
   
 const  [todotaskdetails , settodotaskdetails] = useState([]);
 
-   
+const  [todotaskdetailsforfilter , settodotaskdetailsforfilter] = useState([]);   
 
 
 function handleaddtasktitle(e){
@@ -54,6 +54,7 @@ var copytaskdetails  = [...todotaskdetails];
 copytaskdetails.push(taskdetails);
 
  settodotaskdetails(copytaskdetails);
+ settodotaskdetailsforfilter(copytaskdetails);
  
 
 setTasktitle("");
@@ -153,18 +154,18 @@ console.log(value);
 
 if(value === 'completed'){
 var completeddetails = todotaskdetails.filter((datas) => datas.status === value);
-settodotaskdetails(completeddetails);
+settodotaskdetailsforfilter(completeddetails);
 }
 
 
 else if(value === 'Not completed'){
   var notcompleteddetails = todotaskdetails.filter((datas) => datas.status === value);
-  settodotaskdetails(notcompleteddetails);
+  settodotaskdetailsforfilter(notcompleteddetails);
   }
 
 
 else {
-
+settodotaskdetailsforfilter(todotaskdetails);
 
 
 
@@ -236,7 +237,7 @@ handlefilterstatus(e.target.value);
              
               {
 
-todotaskdetails.map((data , index)=> 
+todotaskdetailsforfilter.map((data , index)=> 
 
 <Taskcard key={index}
 tasktitle = {data.tasktitle}
