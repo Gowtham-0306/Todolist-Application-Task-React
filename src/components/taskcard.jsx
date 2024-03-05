@@ -23,11 +23,15 @@ export default function Taskcard({
                 name="select"
                 id="selecttt"
                 value={status} 
-                onChange={(e) =>{ handlestatus(taskid , e.target.value);}}
+                onChange={(e) =>{ handlestatus(taskid , e.target.value);
+                
+                
+                
+                }}
               >
                
-                <option value="Not completed">Not completed</option>
-                <option value="completed"> completed</option>
+               <option value="Not completed">Not completed</option>
+               <option value="completed">completed</option>
               </select>
               <div className="editdelbuttons">
                 <button

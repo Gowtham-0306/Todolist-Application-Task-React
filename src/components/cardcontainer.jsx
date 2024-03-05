@@ -65,7 +65,9 @@ setTaskdesc("");
 
 
 function handlestatus(taskid , newstatus){
-
+todotaskdetails.map((d)=>console.log(d));
+console.log(`${taskid}hloo`);
+console.log(`${newstatus}`);
 
   const updatedTaskstatus = todotaskdetails.map((task) => {
     if (task.id === taskid) {
@@ -78,6 +80,7 @@ function handlestatus(taskid , newstatus){
     }
   });
   settodotaskdetails(updatedTaskstatus);
+  settodotaskdetailsforfilter(updatedTaskstatus);
 
 
 
@@ -113,7 +116,7 @@ function handleedit(tasktitlee, taskdescc, edittaskid) {
     }
   });
 
-  settodotaskdetails(updatedTaskDetails);
+  settodotaskdetailsforfilter(updatedTaskDetails);
 
 
   console.log(todotaskdetails);
@@ -142,7 +145,7 @@ return {
 
 
       })
-      settodotaskdetails(newtodotaskdetails);
+      settodotaskdetailsforfilter(newtodotaskdetails);
        console.log("DE;;");
         
         
